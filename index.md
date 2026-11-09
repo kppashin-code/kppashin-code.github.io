@@ -10,7 +10,7 @@ links:
     url: "https://orcid.org/0000-0002-3780-6775"
   - label: GitHub
     url: "https://github.com/kppashin-code"
-  - label: Digital Exhibition Work
+  - label: Digital Exhibit Work (Art)
     url: "https://kristinepashin.art"
 ---
 
