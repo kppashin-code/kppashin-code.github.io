@@ -1,7 +1,7 @@
 ---
 title: Kristine Pashin
 description: "phd student, university of oxford and the national institutes of health."
-# image: files/headshot.jpg
+image: files/headshot.jpg
 home: true
 links:
   - label: Google Scholar

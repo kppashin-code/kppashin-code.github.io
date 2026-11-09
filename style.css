@@ -28,7 +28,12 @@ a { color: var(--accent); text-underline-offset: 0.18em; text-decoration-thickne
 a:hover { text-decoration-thickness: 2px; }
 nav { font-size: 0.95rem; margin-bottom: 2.5rem; }
 nav a { color: var(--muted); text-decoration: none; }
-.headshot { width: 8rem; height: 8rem; border-radius: 50%; object-fit: cover; display: block; margin-bottom: 1.75rem; }
+.headshot { width: 10rem; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 20%; border-radius: 4px; display: block; margin-bottom: 1.75rem; }
+main.with-photo { max-width: 56rem; }
+@media (min-width: 46rem) {
+  main.with-photo { display: grid; grid-template-columns: 15rem 1fr; gap: 3rem; align-items: start; padding-top: 6rem; }
+  main.with-photo .headshot { width: 100%; margin: 0.4rem 0 0; position: sticky; top: 2rem; }
+}
 img { max-width: 100%; }
 hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5rem 0; }
 blockquote { margin: 1.5rem 0; padding-left: 1rem; border-left: 2px solid var(--rule); color: var(--muted); }

@@ -12,12 +12,13 @@ $if(image)$<meta property="og:image" content="$site-url$/$image$">$endif$
 <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-<main>
+<main$if(home)$$if(image)$ class="with-photo"$endif$$endif$>
 $if(home)$
 $if(image)$<img class="headshot" src="/$image$" alt="$title$">$endif$
 $else$
 <nav><a href="/">← $site-title$</a></nav>
 $endif$
+<div class="content">
 <h1>$title$</h1>
 $if(subtitle)$<p class="subtitle">$subtitle$</p>$endif$
 $body$
@@ -28,6 +29,7 @@ $for(links)$
 $endfor$
 </ul>
 $endif$
+</div>
 </main>
 </body>
 </html>
