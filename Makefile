@@ -6,10 +6,10 @@ HTML := $(MD:.md=.html)
 
 all: $(HTML) redirects sitemap.xml
 
-%.html: %.md template.html site.yml
+%.html: %.md template.html site.yml style.css
 	pandoc $< --from markdown --to html5 --standalone \
 	  --template template.html --metadata-file site.yml \
-	  --metadata pagepath=$(patsubst index.html,,$@) -o $@
+	  --metadata cssv=$(shell md5 -q style.css) --metadata pagepath=$(patsubst index.html,,$@) -o $@
 
 # each line of the redirects file becomes a tiny meta-refresh page.
 redirects: redirects.txt

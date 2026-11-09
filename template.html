@@ -9,7 +9,7 @@ $if(description)$<meta name="description" content="$description$">$endif$
 $if(description)$<meta property="og:description" content="$description$">$endif$
 $if(image)$<meta property="og:image" content="$site-url$/$image$">$endif$
 <link rel="canonical" href="$site-url$/$pagepath$">
-<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="/style.css?v=$cssv$">
 </head>
 <body>
 <main$if(home)$$if(image)$ class="with-photo"$endif$$endif$>
