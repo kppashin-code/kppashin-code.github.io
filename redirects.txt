@@ -1,0 +1,4 @@
+# name  destination, served at /r/name
+scholar https://scholar.google.com/citations?user=e7AepY4AAAAJ
+orcid   https://orcid.org/0000-0002-3780-6775
+github  https://github.com/kppashin-code

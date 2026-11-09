@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="$lang$">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>$if(home)$$site-title$$else$$title$ · $site-title$$endif$</title>
+$if(description)$<meta name="description" content="$description$">$endif$
+<meta property="og:title" content="$title$">
+$if(description)$<meta property="og:description" content="$description$">$endif$
+$if(image)$<meta property="og:image" content="$site-url$/$image$">$endif$
+<link rel="canonical" href="$site-url$/$pagepath$">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<main>
+$if(home)$
+$if(image)$<img class="headshot" src="/$image$" alt="$title$">$endif$
+$else$
+<nav><a href="/">← $site-title$</a></nav>
+$endif$
+<h1>$title$</h1>
+$if(subtitle)$<p class="subtitle">$subtitle$</p>$endif$
+$body$
+$if(links)$
+<ul class="links">
+$for(links)$
+  <li><a href="$links.url$">$links.label$</a></li>
+$endfor$
+</ul>
+$endif$
+</main>
+</body>
+</html>
